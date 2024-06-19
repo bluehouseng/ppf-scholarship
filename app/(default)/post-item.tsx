@@ -29,10 +29,10 @@ export default function PostItem({ ...props }) {
               </div>
               <div className="mb-2">
                 <Link className="text-lg text-gray-800 font-bold" href={`#`}>
-                  {props.title}
+                  {props?.fullName}
                 </Link>
                 <div className="text-sm text-gray-800 font-semibold mb-1">
-                  {props.name}
+                  {props?.email}
                 </div>
               </div>
               <div className="-m-1">
@@ -42,7 +42,7 @@ export default function PostItem({ ...props }) {
                   }`}
                   href="#0"
                 >
-                  {props.tag1}
+                  {props?.school?.schoolName}
                 </a>
                 <a
                   className={`text-xs text-gray-500 font-medium inline-flex px-2 py-0.5 hover:text-gray-600 rounded-md m-1 whitespace-nowrap transition duration-150 ease-in-out ${
@@ -50,7 +50,7 @@ export default function PostItem({ ...props }) {
                   }`}
                   href="#0"
                 >
-                  {props.tag2}
+                  {props?.trajectory?.trajectoryName}
                 </a>
               </div>
             </div>
