@@ -1,20 +1,31 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Illustration from '@/public/images/hero-illustration.svg'
-import Avatar01 from '@/public/images/avatar-01.jpg'
-import Avatar02 from '@/public/images/avatar-02.jpg'
-import Avatar03 from '@/public/images/avatar-03.jpg'
-import Avatar04 from '@/public/images/avatar-04.jpg'
+import Link from "next/link";
+import Image from "next/image";
+import Illustration from "@/public/images/hero-illustration.svg";
+import Avatar01 from "@/public/images/avatar-01.jpg";
+import Avatar02 from "@/public/images/avatar-02.jpg";
+import Avatar03 from "@/public/images/avatar-03.jpg";
+import Avatar04 from "@/public/images/avatar-04.jpg";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       {/* Bg */}
-      <div className="absolute inset-0 bg-gradient-to-b from-indigo-100 to-white pointer-events-none -z-10" aria-hidden="true" />
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-indigo-100 to-white pointer-events-none -z-10"
+        aria-hidden="true"
+      />
 
       {/* Illustration */}
-      <div className="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10" aria-hidden="true">
-        <Image src={Illustration} className="max-w-none" priority alt="Hero Illustration" />
+      <div
+        className="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10"
+        aria-hidden="true"
+      >
+        <Image
+          src={Illustration}
+          className="max-w-none"
+          priority
+          alt="Hero Illustration"
+        />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -23,16 +34,23 @@ export default function Hero() {
           <div className="max-w-3xl text-center md:text-left">
             {/* Copy */}
             <h1 className="h1 font-inter mb-6">
-              Join the best tech startups in the <span className="font-nycd text-indigo-500 font-normal">industry</span>
+              Prince Ponfa Miri Foundation{" "}
+              <span className="font-nycd text-indigo-500 font-normal">
+                Future Workforce Scholarship
+              </span>
             </h1>
             <p className="text-lg text-gray-500 mb-8">
-              Our landing page template works on all devices, so you only have to set it
-              <br className="hidden md:block" /> up once, and get beautiful results forever.
+              Inform. Inspire. Engage
+              {/* <br className="hidden md:block" /> up once, and get beautiful
+              results forever. */}
             </p>
             {/* Button + Avatars */}
-            <div className="sm:flex sm:items-center sm:justify-center md:justify-start space-y-6 sm:space-y-0 sm:space-x-5">
+            {/* <div className="sm:flex sm:items-center sm:justify-center md:justify-start space-y-6 sm:space-y-0 sm:space-x-5">
               <div>
-                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 shadow-sm" href="/post-a-job">
+                <Link
+                  className="btn text-white bg-indigo-500 hover:bg-indigo-600 shadow-sm"
+                  href="/post-a-job"
+                >
                   Post a job - $299
                 </Link>
               </div>
@@ -68,13 +86,14 @@ export default function Hero() {
                   />
                 </div>
                 <div className="text-sm text-gray-500 font-medium">
-                  Reach <span className="text-indigo-500">100K+</span> Prefessionals
+                  Reach <span className="text-indigo-500">100K+</span>{" "}
+                  Prefessionals
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

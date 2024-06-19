@@ -5,9 +5,9 @@ export default function PostItem({ ...props }) {
     <div className={`[&:nth-child(-n+12)]:-order-1 group ${!props.sticky && 'border-b border-gray-200'}`}>
       <div className={`px-4 py-6 ${props.sticky && 'bg-indigo-100 rounded-xl'}`}>
         <div className="sm:flex items-center space-y-3 sm:space-y-0 sm:space-x-5">
-          <div className="shrink-0">
+          {/* <div className="shrink-0">
             <img src={props.image} width="56" height="56" alt={props.name} />
-          </div>
+          </div> */}
           <div className="grow lg:flex items-center justify-between space-y-5 lg:space-x-2 lg:space-y-0">
             <div>
               <div className="flex datas-start space-x-2">
@@ -40,7 +40,7 @@ export default function PostItem({ ...props }) {
                 </a>
               </div>
             </div>
-            <div className="min-w-[120px] flex items-center lg:justify-end space-x-3 lg:space-x-0">
+            {/* <div className="min-w-[120px] flex items-center lg:justify-end space-x-3 lg:space-x-0">
               <div className="lg:hidden group-hover:lg:block">
                 <Link className="btn-sm py-1.5 px-3 text-white bg-indigo-500 hover:bg-indigo-600 group shadow-sm" href={`/posts/${props.id}`}>
                   Apply Now{' '}
@@ -50,7 +50,7 @@ export default function PostItem({ ...props }) {
                 </Link>
               </div>
               <div className="group-hover:lg:hidden text-sm italic text-gray-500">{props.date}</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

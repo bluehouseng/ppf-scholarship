@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PressLogos />
+      {/* <PressLogos /> */}
 
       {/*  Page content */}
       <section>
@@ -20,12 +20,13 @@ export default function Home() {
           <div className="py-8 md:py-16">
             <div className="md:flex md:justify-between" data-sticky-container>
 
-              <Sidebar />
+              {/* <Sidebar /> */}
 
               {/* Main content */}
               <div className="md:grow">
+                
                 <PostsList />
-                <Testimonials />
+                {/* <Testimonials /> */}
 
               </div>
 
